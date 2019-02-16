@@ -7,20 +7,17 @@ Transform your postman collection to html documentation
 
 ### Installation
 ```go
-go get -u github.com/thedevsaddam/docgen
+go get -u github.com/motsmanish/docgen
 ```
 
 #### Mac
 ```bash
-brew tap thedevsaddam/cli https://github.com/thedevsaddam/homebrew-cli.git
+brew tap thedevsaddam/cli https://github.com/motsmanish/homebrew-cli.git
 brew install docgen
 
 # update
 brew upgrade docgen
 ```
-
-#### Linux/Windows
-[Download binary](https://github.com/thedevsaddam/docgen-bin)
 
 ### Available features
 * Live postman collection to documentation
