@@ -10,15 +10,6 @@ Transform your postman collection to html documentation
 go get -u github.com/motsmanish/docgen
 ```
 
-#### Mac
-```bash
-brew tap thedevsaddam/cli https://github.com/motsmanish/homebrew-cli.git
-brew install docgen
-
-# update
-brew upgrade docgen
-```
-
 ### Available features
 * Live postman collection to documentation
 * Build postman collection to html/markdown documentation
