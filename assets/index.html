@@ -37,25 +37,8 @@
                 </p>
             </div>
             <!-- end introduction -->
-            <div class="col-md-12">
-                <!-- left sidebar index -->
-                <div class="col-md-3">
-                    <ul>
-                        @{{ range $index, $c := .Data.Collections }}@
-                        <li>
-                            <strong><a href="#@{{ $c.Name | snake }}@">@{{ $c.Name }}@</a></strong>
-                            <ul>
-                                @{{ range $i, $item := $c.Items }}@
-                                    <li><a class="endpoint_menu" href="#jump-@{{ $c.Name | snake }}@-@{{ $item.Name | snake }}@">@{{ $item.Name }}@</a></li>
-                                @{{ end }}@
-                            </ul>
-                        </li>
-                        @{{ end }}@
-                    </ul>
-                </div>
-                <!-- end left sidebar index -->
                 <!-- main div to display items -->
-                <div class="col-md-9">
+                <div class="col-md-12">
                     <!-- directory -->
                     @{{ range $di, $d := .Data.Collections }}@
                         <div class="panel panel-default">
@@ -236,8 +219,7 @@
                     @{{ end }}@
                     <!-- end directory -->
                 </div>
-                <!-- end main div to display items -->
-            </div>
+  
         </div>
         <!-- necessary sciprts -->
         <script type="text/javascript">
